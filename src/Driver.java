@@ -3,14 +3,14 @@ public class Driver
 {
 	public static void main(String[] args) 
 	{
-		Investment a = new Investment();
-		Investment b = new Investment();
+		Investment a = new Investment(); //just one
+		Investment b = new Investment(); //several
 		a.addContribution(new Contribution(1200, 1));
 		int month = 1;
 		for(int i = 0; i < 12; i++)
 		{
 			b.addContribution(new Contribution(100, month));
-		    month = month * 12;
+		    month = month + 12;
 		}
 		
 		int totalInvestmentTime = 156;
